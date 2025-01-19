@@ -15,14 +15,15 @@
     --font-size-h2: 28px;        /* Large heading */
     --font-size-h1: 32px;        /* Extra large heading */
 
-    /* Font Weights */   /* Semi light */
-    --font-weight-regular: 400;  /* Regular */
+    /* Font Weights */   
+    --font-weight-semi-light: 400;  /* Semi light */
+    --font-weight-regular: 500;  /* Regular */
     --font-weight-bold: 700;     /* Bold */
 
     /* Font Families */
-    --font-primary: "cy", sans-serif;
+    font-family: "cy", sans-serif, Arial, Helvetica;
 }
-    
+
 body {
   margin: 0;
 }
