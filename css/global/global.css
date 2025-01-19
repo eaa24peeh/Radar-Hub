@@ -1,0 +1,43 @@
+:root {
+   /* Colors */
+    --bg: #191919;
+    --text-light: #D9D9D9;
+    --text-medium-dark: #303030;
+    --text-dark: #191919;
+    --text-white: #D9D9D9;
+    --accent-default: #BFFF00;
+    --accent-dark: #94C600;
+
+    /* Typography Scale */
+    --font-size-body: 16px;      /* Base size */
+    --font-size-h4: 20px;        /* Small heading */
+    --font-size-h3: 24px;        /* Medium heading */
+    --font-size-h2: 28px;        /* Large heading */
+    --font-size-h1: 32px;        /* Extra large heading */
+
+    /* Font Weights */   /* Semi light */
+    --font-weight-regular: 400;  /* Regular */
+    --font-weight-bold: 700;     /* Bold */
+
+    /* Font Families */
+    --font-primary: "cy", sans-serif;
+}
+    
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
