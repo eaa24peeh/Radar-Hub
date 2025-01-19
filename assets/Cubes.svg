@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 458 850">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #121212;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-4 {
+        fill: #303030;
+      }
+
+      .cls-5 {
+        fill: #8e8e8e;
+      }
+
+      .cls-2 {
+        font-family: Cy-Bold, Cy;
+        font-size: 80px;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <g id="Layer_6" data-name="Layer 6">
+    <g id="CUBE1">
+      <polygon class="cls-5" points="0 132.21 229 0 229 123 0 255.21 0 132.21"/>
+      <polygon class="cls-4" points="458 132.21 229 0 229 123 458 255.21 458 132.21"/>
+      <path class="cls-1" d="M229.5,388.29L0,255.21,229,123l229,132.21-228.5,133.08Z"/>
+      <text class="cls-2" transform="translate(44.74 200.72) rotate(-30) scale(1.15 .87) skewX(-23.41)"><tspan x="0" y="0">55+</tspan></text>
+    </g>
+    <g id="CUBE2">
+      <polygon class="cls-5" points="0 286.12 229 153.9 229 276.9 0 409.12 0 286.12"/>
+      <polygon class="cls-4" points="458 286.12 229 153.9 229 276.9 458 409.12 458 286.12"/>
+      <path class="cls-1" d="M229.5,542.19L0,409.12l229-132.21,229,132.21-228.5,133.08Z"/>
+      <text class="cls-2" transform="translate(12.61 371.93) rotate(-30) scale(1.15 .87) skewX(-23.41)"><tspan x="0" y="0">+37%</tspan></text>
+    </g>
+    <g id="CUBE3">
+      <polygon class="cls-5" points="0 440.02 229 307.81 229 430.81 0 563.02 0 440.02"/>
+      <polygon class="cls-4" points="458 440.02 229 307.81 229 430.81 458 563.02 458 440.02"/>
+      <path class="cls-1" d="M229.5,696.1L0,563.02l229-132.21,229,132.21-228.5,133.08Z"/>
+      <text class="cls-2" transform="translate(50.93 499.76) rotate(-30) scale(1.15 .87) skewX(-23.41)"><tspan x="0" y="0">20+</tspan></text>
+    </g>
+    <g id="CUBE4">
+      <polygon class="cls-5" points="0 593.92 229 461.71 229 584.71 0 716.92 0 593.92"/>
+      <polygon class="cls-4" points="458 593.92 229 461.71 229 584.71 458 716.92 458 593.92"/>
+      <path class="cls-1" d="M229.5,850L0,716.92l229-132.21,229,132.21-228.5,133.08Z"/>
+      <text class="cls-2" transform="translate(11.88 679.46) rotate(-30) scale(1.15 .87) skewX(-23.41)"><tspan x="0" y="0">+</tspan><tspan class="cls-3" x="43.2" y="0">4</tspan><tspan x="90.88" y="0">2%</tspan></text>
+    </g>
+  </g>
+</svg>
