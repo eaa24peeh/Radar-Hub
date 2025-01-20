@@ -4,7 +4,6 @@
     background-color: var(--accent-default);
 }
 
-/* Add these selectors to override specific elements */
 .we-provide h1,
 .we-provide h2,
 .we-provide h3,
@@ -23,19 +22,7 @@
     align-items: center;    
 }
 
-
-
-.feature-block {
-    margin-bottom: 2rem;
-}
-
-.feature-block h2,
-.feature-block h4 {
-    margin-bottom: 1rem;    
-}
-
 .right-content {
-    padding-top: 2rem;
     text-align: center;
 }
 
@@ -44,7 +31,7 @@
 }
 
 .right-content p {
-    font-size: 16px;
+    font-size: var(--body);
     line-height: 1.6;
 }
 
