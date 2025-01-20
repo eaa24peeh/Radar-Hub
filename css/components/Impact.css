@@ -3,24 +3,27 @@
 }
 
 .arrow-column {
+    position: absolute;
+    left: 50%;
+    z-index: 10;
+    width: 100%; /* Full width instead of fixed pixels */
+    max-width: 90vw; /* Limit maximum width */
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 0.5rem;
-    z-index: 1;
+    transform: translate(-50%, -50%);
+    gap: 0.25rem;
 }
-
-
-
 .impact-section {
     display: flex;
     flex-direction: row;
-    justify-content: center; /* Centers the entire section horizontally */
+    justify-content: center;
     gap: 2rem;
-    width: 90vw; /* Base width for the section */
+    width: 90vw;
     max-width: 1400px;
-    margin: 0 auto;
-    overflow: hidden; /* Prevent section overflow */
+    margin: 12rem auto 0; /* Combines margin-top with horizontal centering */
+    overflow: hidden;
 }
 
 .impact-wrapper {
@@ -30,8 +33,7 @@
     align-items: flex-start;
     gap: 2rem;
     width: 50vw; /* Base width for larger screens */
-    max-width: 600px;
-    min-width: 400px; /* Match the h1's minimum width */
+    max-width: 50%;
     overflow: hidden; /* Prevent wrapper overflow */
 }
 
