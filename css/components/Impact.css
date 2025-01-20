@@ -24,6 +24,7 @@
     max-width: 1400px;
     margin: 12rem auto 0; /* Combines margin-top with horizontal centering */
     overflow: hidden;
+    margin-bottom: 4rem;
 }
 
 .impact-wrapper {
