@@ -21,6 +21,7 @@ nav {
     padding: 0;
     margin: 0;
     color: var(--white);
+    font-size: var(--body);
 }
 
 /* Make sure the links also inherit the color */

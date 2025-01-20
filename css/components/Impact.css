@@ -1,0 +1,119 @@
+.arrow-column h3 {
+    margin-bottom: 4rem; /* Increased space between heading and arrows */
+}
+
+.arrow-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    z-index: 1;
+}
+
+
+
+.impact-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Centers the entire section horizontally */
+    gap: 2rem;
+    width: 90vw; /* Base width for the section */
+    max-width: 1400px;
+    margin: 0 auto;
+    overflow: hidden; /* Prevent section overflow */
+}
+
+.impact-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    width: 50vw; /* Base width for larger screens */
+    max-width: 600px;
+    min-width: 400px; /* Match the h1's minimum width */
+    overflow: hidden; /* Prevent wrapper overflow */
+}
+
+.impact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    width: 100%; /* Ensures content takes full width of wrapper */ /* Centers text content */ /* Centers text within each section */
+}
+
+
+.impact-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin-top: 8rem;
+}
+
+
+.impact-text {
+    max-width: 600px; /* Limits the width of each text block for better readability */
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.impact-text h3 {
+    font-weight: bold;
+    font-size: var(--h3);
+    margin-bottom: 1rem;
+}
+.impact-text p {
+    font-weight: normal;
+    font-size: var(--body);
+    
+
+}
+.impact-title {
+    width: 100%; /* Ensures title takes full width like other text sections */
+    min-width: 400px; /* Match the h1's minimum width */
+    margin-bottom: 9rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.impact-title h1 {
+    text-align: left;
+    font-size: var(--h1);
+    margin-bottom: 2rem;
+    min-width: 400px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .impact-wrapper {
+        max-width: 60%;
+    }
+}
+
+@media (max-width: 992px) {
+    .impact-wrapper {
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .impact-section {
+        max-width: 95%; 
+    }
+    .impact-wrapper {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .impact-image {
+        display: none; /* Hides the image */
+    }
+    
+    .impact-wrapper {
+        width: 90vw; /* Allows content to use full width when image is hidden */
+        max-width: 800px; /* Increased max-width for better readability */
+    }
+}
+

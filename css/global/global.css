@@ -9,11 +9,11 @@
     --accent-dark: #94C600;
 
     /* Typography Scale */
-    --font-size-body: 16px;      /* Base size */
-    --font-size-h4: 20px;        /* Small heading */
-    --font-size-h3: 24px;        /* Medium heading */
-    --font-size-h2: 28px;        /* Large heading */
-    --font-size-h1: 32px;        /* Extra large heading */
+    --body: 16px;      /* Base size */
+    --h4: 20px;        /* Small heading */
+    --h3: 24px;        /* Medium heading */
+    --h2: 28px;        /* Large heading */
+    --h1: 32px;        /* Extra large heading */
 
     /* Font Weights */   
     --font-weight-semi-light: 400;  /* Semi light */
@@ -23,11 +23,15 @@
     /* Font Families */
     font-family: "cy", sans-serif, Arial, Helvetica;
 }
-
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-weight: var(--font-weight-regular);
   color: var(--white);
   background-color: var(--dark);    
