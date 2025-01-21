@@ -64,6 +64,7 @@
 .impact-text h3 {
     font-weight: bold;
     font-size: var(--h3);
+    color: var(--accent-default);   
     margin-bottom: 1rem;
 }
 .impact-text p {
@@ -83,6 +84,7 @@
 .impact-title h1 {
     text-align: left;
     font-size: var(--h1);
+    color: var(--accent-default);
     margin-bottom: 2rem;
     min-width: 400px;
 }
