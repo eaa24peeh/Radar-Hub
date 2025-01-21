@@ -1,5 +1,8 @@
 .we-provide {
-    padding: clamp(2rem, 8vw, 10rem);
+    padding-left: clamp(2rem, 8vw, 10rem);
+    padding-right: clamp(2rem, 8vw, 10rem);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     position: relative;
     background-color: var(--accent-default);
 }
@@ -22,20 +25,28 @@
 }
 
 .left-content h1 {
-    font-size: var(--h1);
-    margin-bottom: 1rem;
+    font-size: var(--h1); 
 }
 
-left-content h2 {
-    font-size: var(--h2);
+.left-content h3 {
+    font-size: var(--h3); 
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.we-provide h1 {
+    padding-bottom: 2rem;
+    font-size: var(--h1); 
 }
 
 .right-content {
     text-align: center;
 }
 
-.right-content h2 {
-    margin-bottom: 1rem;
+.right-content h4 {
+    margin-bottom: 0.5rem;
+    font-size: var(--h4);
+    font-weight: var(--font-weight-regular);
 }
 
 .right-content p {
@@ -43,6 +54,8 @@ left-content h2 {
     line-height: 1.6;
 }
 
+
 .bullet-list {
     font-weight: var(--font-weight-regular); 
+    padding-bottom: 1rem;
 }

@@ -4,14 +4,14 @@ header {
     background-color: hsla(0, 0%, 0%, 0.4);
     padding: .5rem 0;  /* First value (1rem) is top/bottom, second value (3rem) is left/right */
     z-index: 10;  /* This ensures header stays above the background */
+    padding-left: clamp(2rem, 8vw, 3rem);
+    padding-right: clamp(2rem, 8vw, 3rem);
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: clamp(2rem, 8vw, 3rem);
-    padding-right: clamp(2rem, 8vw, 3rem);    
 }
 
 .nav-menu {

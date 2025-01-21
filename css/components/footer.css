@@ -1,0 +1,169 @@
+footer {
+    background-color: var(--dark);
+    padding-bottom: 2rem;
+    padding-left: clamp(2rem, 8vw, 10rem);
+    padding-right: clamp(2rem, 8vw, 10rem);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: clamp(4rem, 8vw, 8rem);  /* Minimum 4rem, scaling with viewport, maximum 8rem */
+}
+
+footer > div {
+    max-width: 350px;
+    width: 100%;
+}
+
+footer h3, footer h4 {
+    color: var(--accent-default);
+}
+
+footer h2 {
+    margin-bottom: 2rem;
+ /* 28px as defined in global.css */
+}
+
+.newsletter-form {
+    margin-top: 1.5rem;
+}
+
+.newsletter-input-group {
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+    max-width: 100%;
+}
+
+.newsletter-input {
+    flex: 1;
+    min-width: 0;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 2px;
+    background: var(--medium-dark);
+    color: var(--white);
+    font-size: var(--body);
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    box-sizing: border-box;
+    height: 48px;
+    border: 1px solid transparent;
+}
+
+.social-grid {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    max-width: 100%; /* Ad*/
+}
+
+.social-grid a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-grid img {
+    width: auto;
+    height: auto;
+}
+
+/* Override autocomplete styles */
+.newsletter-input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 48px var(--medium-dark) inset !important;
+    -webkit-text-fill-color: var(--white) !important;
+}
+
+.newsletter-input:-webkit-autofill:hover,
+.newsletter-input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 48px var(--medium-dark) inset !important;
+    -webkit-text-fill-color: var(--white) !important;
+}
+
+/* For Firefox */
+.newsletter-input:-moz-autofill,
+.newsletter-input:-moz-autofill-preview {
+    background-color: var(--medium-dark) !important;
+    color: var(--white) !important;
+}
+
+.newsletter-input::placeholder {
+    color: var(--white);
+    opacity: 0.7;
+}
+
+.newsletter-input:focus {
+    opacity: 1; /* Full opacity when focused */
+    outline: none; /* Remove default focus outline */
+    border: 1px solid var(--accent-default); /* Optional: add focus indicator */
+}
+
+.newsletter-submit {
+    flex-shrink: 0;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    background: var(--accent-default);
+    color: var(--dark);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--body);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    height: 48px;
+    box-sizing: border-box;
+}
+
+/* Hover state */
+.newsletter-submit:hover {
+    background: var(--accent-dark);
+    color: var(--dark);
+}
+
+/* Active/Click state */
+.newsletter-submit:active {
+    background: var(--accent-dark);
+    color: var(--dark);
+    transform: scale(0.98); /* Optional: slight scale effect when clicking */
+}
+
+/* Success state */
+.newsletter-submit.success {
+    background: var(--accent-dark);
+    color: var(--dark);
+    pointer-events: none;
+}
+
+.newsletter-success {
+    color: var(--medium-dark);
+    padding: 0 1rem;
+    opacity: 0;
+    height: 48px;
+    transition: all 0.3s ease;
+    font-weight: var(--font-weight-regular);
+    background-color: var(--light-gray);
+    border-radius: 4px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.newsletter-success.show {
+    opacity: 1;
+}
+
+.hidden {
+    display: none;
+}
+
+.newsletter-input-group {
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.newsletter-form {
+    position: relative; /* Container for absolute positioning */
+    width: 100%;
+}
