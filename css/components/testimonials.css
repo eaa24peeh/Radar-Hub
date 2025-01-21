@@ -3,6 +3,7 @@
     max-width: 75rem;
     margin-inline: auto;
     margin-block: 8rem;
+    padding-inline: max(4rem, 5%);
 }
 
 /* Base Styles */
@@ -30,6 +31,7 @@
 
 .testimonial-image-wrapper img {
     width: 100%;
+    min-width: 238px;
     height: auto;
     object-fit: cover;
     filter: drop-shadow(-3.125rem -3.125rem 0 var(--accent-default));
@@ -57,7 +59,11 @@
 .testimonial-content-wrapper {
     flex: 1;
     position: relative;
-    padding-block: 6rem; 
+    padding-block: 6rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .testimonial-quote {
@@ -80,6 +86,7 @@
 .testimonial-text-group {
     position: relative;
     z-index: 1;
+    text-align: center;
 }
 
 .testimonial-subtitle {
@@ -89,6 +96,7 @@
 
 .testimonial-heading {
     font-size: clamp(var(--h3), 5vw, var(--h1));
+    text-align: center;
 }
 
 /* Responsive Breakpoints */
@@ -101,6 +109,7 @@
 @media (max-width: 48em) {
     .testimonial-container {
         flex-direction: column;
+        gap: 6rem;
     }
 
     .testimonial-image-wrapper {
@@ -114,7 +123,12 @@
 
 @media (max-width: 30em) {
     .testimonial-content-wrapper {
-        padding-block: 3rem;  /* Further reduced space for quotes on mobile */
+        padding-block: 3rem;
+        text-align: center;
+    }
+    
+    .testimonial-text-group {
+        text-align: center;
     }
 }
 
