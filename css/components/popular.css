@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .popular-section {
+    padding: 0 2rem; 
+  }
+  
+  .post-column {
+    max-width: 800px;      
+    margin: 0 auto;        
+    display: flex;
+    flex-direction: column; 
+    gap: 2rem;             
+  }
+
+  .post-column h1 {
+    font-size: 2rem;
+    text-align: left; 
+  }
+  
+  .post-card {
+    width: 100%;
+    max-width: 800px;
+    height: 215px; 
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 0.25rem;        
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+  }
+
+
+@media (max-width: 48em) {
+    .post-grid {
+        gap: clamp(1rem, 2vw, 1.5rem);
+    }
+}
+
+
+
+
