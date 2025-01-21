@@ -12,6 +12,21 @@
     <link rel="manifest" href="/assets/favicon/site.webmanifest" />
     <link rel="stylesheet" href="https://use.typekit.net/bli1hsx.css">
     <link rel="stylesheet" href="css/hub_style.css">
+    <style>
+        /* Hide content until CSS is loaded */
+        body {
+            visibility: hidden;
+            opacity: 0;
+        }
+    </style>
+    <script>
+        // Show content once CSS is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.style.visibility = 'visible';
+            document.body.style.opacity = '1';
+            document.body.style.transition = 'opacity 0.1s';
+        });
+    </script>
 </head>
 
 <body>
