@@ -22,6 +22,15 @@
     align-items: center;    
 }
 
+.left-content h1 {
+    font-size: var(--h1);
+    margin-bottom: 1rem;
+}
+
+left-content h2 {
+    font-size: var(--h2);
+}
+
 .right-content {
     text-align: center;
 }
