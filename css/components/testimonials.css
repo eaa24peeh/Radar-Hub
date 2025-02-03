@@ -3,7 +3,8 @@
     max-width: 75rem;
     margin-inline: auto;
     margin-block: 8rem;
-    padding-inline: max(4rem, 5%);
+    padding-left: clamp(2rem, 8vw, 3rem);
+    padding-right: clamp(2rem, 8vw, 3rem);
 }
 
 /* Base Styles */

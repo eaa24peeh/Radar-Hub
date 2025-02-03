@@ -16,6 +16,7 @@ nav {
     align-items: center;
     padding-left: clamp(2rem, 8vw, 3rem);
     padding-right: clamp(2rem, 8vw, 3rem);
+    
 }
 
 .nav-menu {

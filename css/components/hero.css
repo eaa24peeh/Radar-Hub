@@ -26,24 +26,25 @@
   
 
 .hero-content h4 {
-    margin-bottom: 1rem;
+    margin-bottom: clamp(1rem, calc(3rem - 5vw), 2rem);
     font-weight: var(--font-weight-regular);
 }
 
-.hero-content .Radarhub-large {
-    margin-bottom: 1rem;
+.hero-content .radarhub-large {
+    margin-bottom: clamp(1rem, 1rem, 2rem - 5vw);
 }
 
 .hero-content h1 {
-    margin-bottom: 1rem;
+    margin-bottom: clamp(1rem, 2rem - 5vw, 2rem);
 }
 
 .hero-content .cta {
     margin-bottom: 1rem;
 }
 
-.Radarhub-large {
-    width: 300px;
+.radarhub-large {
+    max-width: 300px;
+    min-width: 50%;
     height: auto;
     max-width: 50%;
     display: block; 
@@ -52,8 +53,8 @@
 .cta {
     display: inline-block;
     padding: 0.5rem 1.5rem;
-    background-color: var(--medium-dark);
-    color: var(--white);
+    background-color: var(--accent-default);
+    color: var(--dark);
     text-decoration: none;
     border-radius: 1px;
     font-weight: var(--font-weight-bold);
@@ -69,7 +70,8 @@
 .denne-uges-kreative {
     position: absolute;
     bottom: 3rem;
-    right: 3rem;
+    right: 0;  /* Align against the container's right edge */
+    padding-right: clamp(2rem, 8vw, 3rem);  /* Add responsive right spacing */
     z-index: 2;  
     color: white;
     font-size: var(--body);
@@ -81,5 +83,37 @@
 .artist {
     font-weight: bold;
     color: white;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .hero-content {
+    padding: 1rem 1.5rem; /* Adjust horizontal padding */
+  }
+
+  .hero-content h1 {
+    font-size: clamp(1.5rem, 6vw, 2rem); /* Add responsive font size */
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Add this new rule */
+  .hero-content h4 {
+    font-size: clamp(0.9rem, 4vw, 1.2rem);
+    padding: 0 1rem;
+  }
+
+  .radarhub-large {
+    margin: 0 auto;  /* Center the SVG horizontally */
+    display: block;  /* Ensures margin auto works properly */
+  }
+
+  .denne-uges-kreative {
+    display: none;  /* Hide the element on small screens */
+  }
 }
 

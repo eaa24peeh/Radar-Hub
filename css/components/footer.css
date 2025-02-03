@@ -6,11 +6,14 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: clamp(4rem, 8vw, 8rem);  /* Minimum 4rem, scaling with viewport, maximum 8rem */
+    position: relative;
+    width: 100%;
 }
 
 footer > div {
     max-width: 350px;
     width: 100%;
+    justify-self: center; /* Center each grid item horizontally */
 }
 
 footer h3, footer h4 {
@@ -170,4 +173,27 @@ footer p {
 .newsletter-form {
     position: relative; /* Container for absolute positioning */
     width: 100%;
+}
+
+.footer-contact-info {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr; /* One column by default (vertical stacking) */
+    justify-items: start;       /* Keep inner content left aligned */
+    margin: 0 auto; 
+    align-content: center;
+    align-content: space-between;           /* Center the container within its grid cell */
+}
+
+.footer-contact-info > div {
+    text-align: left;           /* Maintain internal left alignment */
+}
+
+/* When enough space is available, display as a row */
+@media (min-width: 768px) {
+    .footer-contact-info {
+        grid-template-columns: repeat(2, auto);
+        gap: 2rem;
+        justify-content: center; /* Center the grid as a whole within the footer */
+    }
 }

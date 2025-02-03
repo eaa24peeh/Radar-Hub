@@ -1,18 +1,16 @@
 .arrow-column h3 {
-    margin-bottom: 4rem; /* Increased space between heading and arrows */
+    margin-bottom: clamp(1rem, 1rem + 1vw, 2rem); /* Increased space between heading and arrows */
 }
 
 .arrow-column {
     position: absolute;
-    left: 50%;
-    z-index: 10;
+
     width: 100%; /* Full width instead of fixed pixels */
-    max-width: 90vw; /* Limit maximum width */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transform: translate(-50%, -50%);
+    transform: translate(0, -50%);
     gap: 0.25rem;
 }
 .impact-section {
