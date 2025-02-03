@@ -11,7 +11,7 @@
     <meta name="apple-mobile-web-app-title" content="radar hub" />
     <link rel="manifest" href="/assets/favicon/site.webmanifest" />
     <link rel="stylesheet" href="https://use.typekit.net/bli1hsx.css">
-    <link rel="stylesheet" href="css/hub_style.css">
+    <link rel="stylesheet" href="css/style.css">
     <style>
         /* Hide content until CSS is loaded */
         body {
@@ -99,7 +99,7 @@
         </div>
     </footer>
     <script>
-        fetch('components/popular-posts.html')
+        fetch('/popular-posts.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('popular-posts-container').innerHTML = data;

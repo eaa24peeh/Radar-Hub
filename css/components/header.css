@@ -2,10 +2,12 @@ header {
     position: fixed;  /* or absolute, depending on your needs */
     width: 100%;
     height: auto;
-    background-color: hsla(0, 0%, 0%, 0.4);
+    background-color: var(--header-color);
     padding: .5rem 0;  /* First value (1rem) is top/bottom, second value (3rem) is left/right */
     z-index: 10;  /* This ensures header stays above the background */
-
+    /* Add backdrop filter for modern browsers */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 nav {

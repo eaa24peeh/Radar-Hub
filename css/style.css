@@ -1,9 +1,21 @@
-@import url(global/global.css);    
+/* Combined style.css from the original style.css and hub_style.css */
+
+/* Global Styles */
+@import url(global/global.css);
+
+/* shared components */
 @import url(components/header.css);
-@import url(components/footer.css);    
+@import url(components/footer.css);
+
+/* hub.html */
+@import url(components/hub_categories.css);
+
+/* index.html */
 @import url(components/hero.css);
-@import url(components/impact.css);    
-@import url(components/provide.css);   
+@import url(components/impact.css);
+@import url(components/provide.css);
 @import url(components/testimonials.css);
-@import url(components/popular.css);   
-@import url(components/hub_popular.css);   
+
+/* popular.html */
+@import url(components/popular.css);
+

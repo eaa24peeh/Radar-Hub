@@ -7,9 +7,10 @@
     --dark: #191919;
     --accent-default: #BFFF00;
     --accent-dark: #94C600;
+    --header-color: hsla(0, 0%, 0%, 0.4);
 
     /* Typography Scale */
-    --body: 16px;      /* Base size */
+    --body: 14px;      /* Base size */
     --h4: 20px;        /* Small heading */
     --h3: 24px;        /* Medium heading */
     --h2: 28px;        /* Large heading */
