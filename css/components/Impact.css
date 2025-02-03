@@ -39,7 +39,7 @@
 .impact-content {
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 4.5rem;
     width: 100%; /* Ensures content takes full width of wrapper */ /* Centers text content */ /* Centers text within each section */
 }
 
@@ -71,20 +71,18 @@
     
 
 }
-.impact-title {
-    width: 100%; /* Ensures title takes full width like other text sections */
-    min-width: 400px; /* Match the h1's minimum width */
+.impact-title { /* Ensures title takes full width like other text sections */ /* Match the h1's minimum width */
     margin-bottom: 9rem;
     padding-left: 2rem;
-    padding-right: 2rem;
+    padding-right: clamp(2rem, 8vw, 3rem);
 }
+
 
 .impact-title h1 {
     text-align: left;
-    font-size: var(--h1);
+    font-size: clamp(1.25rem, 4vw, 1.75rem);
     color: var(--accent-default);
     margin-bottom: 2rem;
-    min-width: 400px;
 }
 
 /* Responsive adjustments */

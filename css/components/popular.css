@@ -3,7 +3,6 @@
 /* Reset/Basic */
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -44,7 +43,8 @@
 
 /* Styles from the original hub_popular.css */
 .popular-posts {
-  padding: 0 2rem;
+  padding-left: clamp(2rem, 8vw, 3rem);
+  padding-right: clamp(2rem, 8vw, 3rem);
   margin-bottom: 6rem;
   padding-top: 9rem;
   width: 100%;
@@ -175,12 +175,7 @@
   font-weight: var(--font-weight-semi-light);
 }
 
-@media (max-width: 30em) {
-  .popular-posts {
-    padding-inline: 1rem;
-  }
-
-  .post-list {
+.post-list {
     gap: 1.5rem;
-  }
 }
+ 

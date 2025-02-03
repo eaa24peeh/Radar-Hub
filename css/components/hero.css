@@ -4,11 +4,14 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../../assets/background11.webp');
+    /* Composite background: first layer is the gradient overlay, second is the background image */
+    background-image: linear-gradient(to right, rgba(25, 25, 25, 0.5) 0%, rgba(25, 25, 25, 0) 50%), 
+                      url('../../assets/background11.webp');
     background-size: cover;
     background-position: right;
     z-index: 0;  /* Lowest z-index */
 }
+
 
 .hero {
     display: flex;
@@ -26,7 +29,8 @@
   
 
 .hero-content h4 {
-    margin-bottom: clamp(1rem, calc(3rem - 5vw), 2rem);
+    margin-bottom: clamp(1rem, 1rem, 2rem - 5vw);
+    font-size: clamp(1rem, 4vw, 1.25rem);
     font-weight: var(--font-weight-regular);
 }
 
@@ -35,7 +39,8 @@
 }
 
 .hero-content h1 {
-    margin-bottom: clamp(1rem, 2rem - 5vw, 2rem);
+    margin-bottom: clamp(1rem, 2rem - 50vw, 2rem);
+    font-size: clamp(1.25rem, 4vw, 1.5rem);
 }
 
 .hero-content .cta {
@@ -46,7 +51,6 @@
     max-width: 300px;
     min-width: 50%;
     height: auto;
-    max-width: 50%;
     display: block; 
 }
 
@@ -96,14 +100,12 @@
   }
 
   .hero-content h1 {
-    font-size: clamp(1.5rem, 6vw, 2rem); /* Add responsive font size */
-    line-height: 1.2;
+
     margin-bottom: 1.5rem;
   }
 
   /* Add this new rule */
   .hero-content h4 {
-    font-size: clamp(0.9rem, 4vw, 1.2rem);
     padding: 0 1rem;
   }
 
@@ -114,6 +116,12 @@
 
   .denne-uges-kreative {
     display: none;  /* Hide the element on small screens */
+  }
+
+  .hero-background {
+    /* Change the gradient to run from bottom to top covering 90% of the background */
+    background-image: linear-gradient(to top, rgba(25, 25, 25, .75) 25%, rgba(25, 25, 25, 0.1) 90%), 
+                      url('../../assets/background11.webp');
   }
 }
 

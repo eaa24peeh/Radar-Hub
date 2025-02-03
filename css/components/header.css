@@ -8,14 +8,14 @@ header {
     /* Add backdrop filter for modern browsers */
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    padding-left: clamp(2rem, 8vw, 3rem);
+    padding-right: clamp(2rem, 8vw, 3rem);
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: clamp(2rem, 8vw, 3rem);
-    padding-right: clamp(2rem, 8vw, 3rem);
     
 }
 

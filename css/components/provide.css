@@ -1,6 +1,6 @@
 .we-provide {
-    padding-left: clamp(2rem, 8vw, 10rem);
-    padding-right: clamp(2rem, 8vw, 10rem);
+    padding-left: clamp(2rem, 8vw, 3rem);
+    padding-right: clamp(2rem, 8vw, 3rem);
     padding-top: 2rem;
     padding-bottom: 2rem;
     position: relative;
