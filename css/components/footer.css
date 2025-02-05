@@ -4,17 +4,23 @@ footer {
     padding-left: clamp(2rem, 8vw, 3rem);
     padding-right: clamp(2rem, 8vw, 3rem);
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));  /* Reduced to 240px minimum */
-    gap: clamp(2rem, 4vw, 4rem);  /* More responsive gap */
+    grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr)); /* Updated to prevent overflow */
+    gap: clamp(2rem, 4vw, 4rem);
     position: relative;
     width: 100%;
-    justify-content: space-between; /* Evenly distribute containers */
-    justify-items: center; /* Center each container in its grid cell */
+    justify-content: start;
+    justify-items: start;
+    box-sizing: border-box; /* Added to include padding in width calculation */
 }
 
 footer h3, footer h4 {
     color: var(--accent-default);
 }
+
+footer h3 {
+    padding-bottom: .5rem;
+}
+
 
 footer h {
     margin-bottom: 2rem;
@@ -173,14 +179,13 @@ footer p {
 .footer-contact-container,
 .footer-newsletter-container,
 .footer-about-container,
-.footer-some-container {
+.SoMe-container {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    width: 100%;
-    max-width: 400px;  /* Remove complex calculation */
-    min-width: unset;  /* Explicitly allow shrinking */
-    align-items: flex-start;
+    width: 100%; /* Added to ensure containers take full width of their grid cell */
+    max-width: 400px;
+    min-width: unset;  /* Remove min-width constraint */  /* Centers the block in the grid section */
+    text-align: left;    /* Changed from center to left to align text */
 }
 
 /* Add this to prevent text wrapping */
@@ -188,4 +193,13 @@ footer p {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.contact-item {
+    margin-bottom: 2rem;  /* Adds space between contact items */
+}
+
+/* Remove margin from last contact item to avoid extra space at the bottom */
+.contact-item:last-child {
+    margin-bottom: 0;
 }
