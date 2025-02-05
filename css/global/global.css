@@ -10,11 +10,13 @@
     --header-color: hsla(0, 0%, 0%, 0.4);
 
     /* Typography Scale */
-    --body: 14px;      /* Base size */
-    --h4: 20px;        /* Small heading */
-    --h3: 24px;        /* Medium heading */
-    --h2: 28px;        /* Large heading */
-    --h1: 32px;        /* Extra large heading */
+  --h1: clamp(1.75rem, calc(1.54rem + 0.95vw), 2.25rem);   /* 28px - 36px */
+  --h2: clamp(1.5rem, calc(1.29rem + 0.95vw), 2rem);       /* 24px - 32px */
+  --h3: clamp(1.25rem, calc(1.14rem + 0.48vw), 1.5rem);    /* 20px - 24px */
+  --h4: clamp(1rem, calc(0.89rem + 0.48vw), 1.25rem);      /* 16px - 20px */
+  --body: clamp(0.875rem, calc(0.82rem + 0.24vw), 1rem);   /* 14px - 16px */
+
+
 
     /* Font Weights */   
     --font-weight-semi-light: 400;  /* Semi light */
@@ -38,6 +40,8 @@ body {
   color: var(--white);
   background-color: var(--dark);   
   overflow-x: hidden; 
+  font-size: var(--body);
+  line-height: 1.5;
 }
 
 h1,
@@ -50,12 +54,26 @@ h6 {
   line-height: 1.2;
   font-weight: var(--font-weight-bold);
   color: var(--white);
+  font-size: var(--h1);
+}
+
+h2 {
+  font-size: var(--h2);
+}
+
+h3 {
+  font-size: var(--h3);
+}
+
+h4 {
+  font-size: var(--h4);
 }
 
 p {
     line-height: 1.5;
     font-weight: var(--font-weight-regular);
     color: var(--white);
+    font-size: var(--body);
 }
 
 a {

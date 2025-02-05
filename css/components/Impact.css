@@ -80,7 +80,7 @@
 
 .impact-title h1 {
     text-align: left;
-    font-size: clamp(1.25rem, 4vw, 1.75rem);
+    font-size: var(--h1);
     color: var(--accent-default);
     margin-bottom: 2rem;
 }
