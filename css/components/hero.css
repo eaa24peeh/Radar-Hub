@@ -12,6 +12,13 @@
     z-index: 0;  /* Lowest z-index */
 }
 
+/* Use the tablet background image for screens 991px or smaller */
+@media (max-width: 991px) {
+  .hero-background {
+      background-image: linear-gradient(to right, rgba(25, 25, 25, 0.5) 0%, rgba(25, 25, 25, 0) 50%),
+                        url('../../assets/background11_tablet.webp');
+  }
+}
 
 .hero {
     display: flex;
@@ -20,13 +27,12 @@
     position: relative;
     min-height: 70vh;
     overflow: hidden;
-  }
+}
   
-  .hero-content {
+.hero-content {
     position: relative; /* keep your z-index layering if needed */
     padding: clamp(2rem, 8vw, 3rem);
-  }
-  
+}
 
 .hero-content h4 {
     margin-bottom: clamp(1rem, 1rem, 2rem - 5vw);
@@ -100,7 +106,6 @@
   }
 
   .hero-content h1 {
-
     margin-bottom: 1.5rem;
   }
 
@@ -121,7 +126,7 @@
   .hero-background {
     /* Change the gradient to run from bottom to top covering 90% of the background */
     background-image: linear-gradient(to top, rgba(25, 25, 25, .75) 25%, rgba(25, 25, 25, 0.1) 90%), 
-                      url('../../assets/background11.webp');
+                      url('../../assets/background11_tablet.webp');
   }
 }
 

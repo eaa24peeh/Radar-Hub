@@ -3,7 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
     <title>Kontakt - Radar Hub</title>
+    <meta name="title" content="Kontakt - Radar Hub">
+    <meta name="description" content="Kontakt Radar Hub's team - Find vores lokation, kontaktinformation og medarbejdere">
+    <meta name="keywords" content="kontakt radar hub, lokation, medarbejdere, aarhus kultur">
+    <meta name="author" content="Radar Hub">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://radarhub.peterhalldahl.dk/contact">
+    <meta property="og:title" content="Kontakt - Radar Hub">
+    <meta property="og:description" content="Kontakt Radar Hub's team - Find vores lokation, kontaktinformation og medarbejdere">
+    <meta property="og:image" content="https://your-domain.com/path-to-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://radarhub.peterhalldahl.dk/contact">
+    <meta property="twitter:title" content="Kontakt - Radar Hub">
+    <meta property="twitter:description" content="Kontakt Radar Hub's team - Find vores lokation, kontaktinformation og medarbejdere">
+    <meta property="twitter:image" content="https://your-domain.com/path-to-image.jpg">
+
     <link rel="icon" type="image/png" href="/assets/favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
     <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
@@ -12,6 +33,8 @@
     <link rel="manifest" href="/assets/favicon/site.webmanifest" />
     <link rel="stylesheet" href="https://use.typekit.net/bli1hsx.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://static.matterport.com">
+    <link rel="preconnect" href="https://my.matterport.com">
 </head>
 
 <body>
@@ -55,11 +78,17 @@
                 </div>
                 
                 <div class="contact-iframe">
+                    <!-- Clickable placeholder to load the 3D viewer -->
+                    <div class="iframe-placeholder" onclick="loadMatterport()">
+                        <p>Klik for at indlæse 3D-visning</p>
+                    </div>
                     <iframe 
-                        src="https://my.matterport.com/show/?m=BkCuxx9rm7w&hl=1&play=1&sr=-.02,-.6&ss=198&hr=0" 
-                        allowfullscreen 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
+                        title="3D virtuel rundvisning af Radar"
+                        data-src="https://my.matterport.com/show/?m=BkCuxx9rm7w&hl=1&play=1&sr=-.02,-.6&ss=198&hr=0" 
+                        class="lazy-iframe"
+                        loading="lazy"
+                        allowfullscreen
+                        style="display: none">
                     </iframe>
                 </div>
             </div>
@@ -67,6 +96,7 @@
         
         <section class="map-section">
             <iframe 
+                title="Google Maps lokation af Radar"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2222.2248211475344!2d10.191545213519108!3d56.15321737312346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c3fed72fbd781%3A0xcc2e3a589a69875c!2sRadar!5e0!3m2!1sda!2sdk!4v1738790483855!5m2!1sda!2sdk" 
                 style="border:0;" 
                 allowfullscreen="" 
@@ -207,5 +237,22 @@
     </footer>
     <script src="js/newsletter.js"></script>
     <script src="js/nav.js"></script>
+    <script>
+        // Function to load the Matterport iframe when the user clicks the placeholder
+        function loadMatterport() {
+            const iframe = document.querySelector('.lazy-iframe');
+            if (!iframe) return;
+            
+            // Make the iframe visible and assign its source from its data attribute
+            iframe.style.display = 'block';
+            iframe.src = iframe.dataset.src;
+            
+            // Remove the placeholder after loading the iframe
+            const placeholder = document.querySelector('.iframe-placeholder');
+            if (placeholder) {
+                placeholder.remove();
+            }
+        }
+    </script>
 </body>
 </html>
