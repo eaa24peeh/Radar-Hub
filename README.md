@@ -4,10 +4,10 @@ This repository contains the source code for the Radar Community Hub website. Th
 
 - Visit the live website: [radarhub.peterhalldahl.dk](https://radarhub.peterhalldahl.dk)
 
-## Eksamensprojekt
-## Multimedieproduktion 1
-## Multimediedesigneruddannelsen, Erhvervsakademi Aarhus
-## Eksamensprojekt 1. semester, Efterår 2024
+Eksamensprojekt
+Multimedieproduktion 1
+Multimediedesigneruddannelsen, Erhvervsakademi Aarhus
+Eksamensprojekt 1. semester, Efterår 2024
 
 ## Table of contents
 
