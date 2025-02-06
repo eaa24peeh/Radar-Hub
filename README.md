@@ -33,21 +33,19 @@ Radar Community Hub is a digital platform designed to connect the Aarhus communi
 ### Projektets mappestruktur:
 
 radar-hub/
-│
-│── assets/
+├── assets/
 │   ├── favicon/
-│   ├── *.webp
-│   ├── *.svg
+│   │── *.webp
+│   └── *.svg
 │
 ├── css/
 │   ├── style.css
 │   ├── global/
-│   │   ├── global.css
-│   ├── components/
-│   │   ├── *.css
-│
+│   │   └── global.css
+│   └── components/
+│       └── *.css
 ├── js/
-│   ├── *.js
+│   └── *.js
 │
 ├── index.html
 ├── about.html
@@ -56,7 +54,8 @@ radar-hub/
 │
 ├── robots.txt
 ├── sitemap.xml
-├── README.md
+└── README.md
+
 
 
 ### Built with
