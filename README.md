@@ -19,7 +19,7 @@ Visit the live website: [radarhub.peterhalldahl.dk](https://radarhub.peterhallda
 
 ### The challenge
 
-The task is to develop a separate website for Radar—a well-established live music venue in Aarhus—facing a funding crisis starting January 2025. The website must clearly communicate Radar’s cultural value and significance while mobilizing support from young Aarhusians and key local stakeholders. It should serve as an interactive, transparent hub that conveys Radar’s mission, showcases its impact on the local arts scene, and engages the community through features like user contributions, real-time updates, and interactive elements. The objective is to create a dynamic digital platform that not only informs but also inspires and facilitates community involvement to secure Radar’s future as a vital cultural institution in Aarhus.
+The task is to develop a separate website for Radar, a well-established live music venue in Aarhus facing a funding crisis starting January 2025. The website must clearly communicate Radar's cultural value and significance while mobilizing support from young Aarhusians and key local stakeholders. It should serve as an interactive, transparent hub that conveys Radar's mission, showcases its impact on the local arts scene, and engages the community through features like user contributions, real-time updates, and interactive elements. The objective is to create a dynamic digital platform that informs, inspires, and facilitates community involvement to secure Radar's future as a vital cultural institution in Aarhus.
 
 ### The concept
 
