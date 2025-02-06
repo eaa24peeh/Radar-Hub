@@ -24,7 +24,7 @@
   
   .hero-content {
     position: relative; /* keep your z-index layering if needed */
-    padding: 2rem;
+    padding: clamp(2rem, 8vw, 3rem);
   }
   
 
