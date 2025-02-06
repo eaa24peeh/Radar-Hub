@@ -2,7 +2,12 @@
 
 This repository contains the source code for the Radar Community Hub website. The project was developed to create an interactive, transparent platform that connects the Aarhus community with Radar's cultural mission. By providing features like live voting, discussion forums, and real-time insights, the website enables users to see how their contributions impact Radar's operations and the local cultural scene.
 
-Visit the live website: [radarhub.peterhalldahl.dk](https://radarhub.peterhalldahl.dk)
+- Visit the live website: [radarhub.peterhalldahl.dk](https://radarhub.peterhalldahl.dk)
+
+## Eksamensprojekt
+## Multimedieproduktion 1
+## Multimediedesigneruddannelsen, Erhvervsakademi Aarhus
+## Eksamensprojekt 1. semester, Efterår 2024
 
 ## Table of contents
 
@@ -25,6 +30,34 @@ The task is to develop a separate website for Radar, a well-established live mus
 
 Radar Community Hub is a digital platform designed to connect the Aarhus community with the cultural mission of Radar. With the upcoming challenges in funding, the platform provides a transparent space where users can explore how Radar operates and see the impact of their contributions. It offers interactive features such as live voting, discussion forums, and real-time insights into decision-making processes. The clean and responsive design ensures that whether you are a dedicated supporter or a curious newcomer, you can easily engage, share ideas, and help shape the future of one of Aarhus's most cherished cultural institutions.
 
+### Projektets mappestruktur:
+
+radar-hub/
+│
+│── assets/
+│   ├── favicon/
+│   ├── *.webp
+│   ├── *.svg
+│
+├── css/
+│   ├── style.css
+│   ├── global/
+│   │   ├── global.css
+│   ├── components/
+│   │   ├── *.css
+│
+├── js/
+│   ├── *.js
+│
+├── index.html
+├── about.html
+├── hub.html
+├── contact.html
+│
+├── robots.txt
+├── sitemap.xml
+├── README.md
+
 
 ### Built with
 
@@ -37,7 +70,7 @@ Radar Community Hub is a digital platform designed to connect the Aarhus communi
 - **`clamp()` CSS function**:  Implements responsive typography and element sizing, ensuring fluid adjustments across different viewport widths.
 - **Vanilla JavaScript (ES6+)**: Adds interactive features and dynamic behavior to the website, enhancing user experience without external libraries.
 - **Embedded JavaScript**:  Strategic use of inline `<script>` for specific functionalities alongside external JavaScript files for broader interactions, balancing implementation approaches.
-  
+
 
 ### What I learned
 
