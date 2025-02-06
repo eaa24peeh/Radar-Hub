@@ -18,11 +18,11 @@
     flex-direction: row;
     justify-content: center;
     gap: 2rem;
-    width: 90vw;
-    max-width: 1400px;
-    margin: 12rem auto 0; /* Combines margin-top with horizontal centering */
+    width: 100%;
+    padding: 6rem clamp(2rem, 8vw, 3rem) 4rem;
     overflow: hidden;
-    margin-bottom: 4rem;
+    margin: 0 auto; /* Centers the section */
+    max-width: 1400px; /* Optional: limits maximum width */
 }
 
 .impact-wrapper {
@@ -32,7 +32,6 @@
     align-items: flex-start;
     gap: 2rem;
     width: 50vw; /* Base width for larger screens */
-    max-width: 50%;
     overflow: hidden; /* Prevent wrapper overflow */
 }
 
@@ -40,8 +39,9 @@
     display: flex;
     flex-direction: column;
     gap: 4.5rem;
-    width: 100%; /* Ensures content takes full width of wrapper */ /* Centers text content */ /* Centers text within each section */
+    max-width: 30vw; /* Ensures content takes full width of wrapper */ /* Centers text content */ /* Centers text within each section */
 }
+
 
 
 .impact-image {
@@ -49,14 +49,13 @@
     justify-content: center;
     align-items: center;
     max-width: 100%;
-    margin-top: 8rem;
+    padding-top: 8rem; /* Changed from margin-top */
 }
 
 
 .impact-text {
-    max-width: 600px; /* Limits the width of each text block for better readability */
-    padding-left: 2rem;
-    padding-right: 2rem;
+    width: 100%;
+    max-width: 65ch; /* Option 1: Using character width units */
 }
 
 .impact-text h3 {
@@ -71,10 +70,8 @@
     
 
 }
-.impact-title { /* Ensures title takes full width like other text sections */ /* Match the h1's minimum width */
+.impact-title {
     margin-bottom: 9rem;
-    padding-left: 2rem;
-    padding-right: clamp(2rem, 8vw, 3rem);
 }
 
 
@@ -83,38 +80,25 @@
     font-size: var(--h1);
     color: var(--accent-default);
     margin-bottom: 2rem;
+    padding-top: 3rem;
 }
 
-/* Responsive adjustments */
-@media (max-width: 1200px) {
-    .impact-wrapper {
-        max-width: 60%;
-    }
-}
 
-@media (max-width: 992px) {
-    .impact-wrapper {
-        max-width: 70%;
-    }
-}
-
-@media (max-width: 768px) {
-    .impact-section {
-        max-width: 95%; 
-    }
-    .impact-wrapper {
-        max-width: 80%;
-    }
-}
-
-@media (max-width: 1024px) {
+@media (max-width: 991px) {
     .impact-image {
-        display: none; /* Hides the image */
+        display: none;
     }
     
     .impact-wrapper {
-        width: 90vw; /* Allows content to use full width when image is hidden */
-        max-width: 800px; /* Increased max-width for better readability */
+        width: 100%;
+    }
+
+    .impact-content {
+        max-width: 100%;
+    }
+
+    .impact-title {
+        margin-bottom: 0; /* Remove the large margin on smaller screens */
     }
 }
 

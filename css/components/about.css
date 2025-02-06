@@ -1,5 +1,5 @@
 .about-intro {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     padding-top: 6rem;
     padding-left: clamp(2rem, 8vw, 3rem);
@@ -12,7 +12,7 @@
 }
 
 .principles {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     padding-top: 6rem;
     padding-left: clamp(2rem, 8vw, 3rem);
@@ -23,16 +23,17 @@
 
 .principles h2 {
     max-width: 1000px;
-    margin: 0 auto 2rem;
+    padding-bottom: 2rem;
     color: var(--accent-default);
 }
 
 .principle-grid {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    justify-content: center;
 }
 
 .principle {
@@ -96,5 +97,15 @@
 
     .principle-title {
         padding: 1rem;
+    }
+}
+
+
+
+@media (max-width: 849px) {
+    .about-intro,
+    .principles,
+    .principle-grid {
+        width: 100%;
     }
 } 

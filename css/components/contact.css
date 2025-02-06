@@ -10,7 +10,7 @@
 .contact-container {
     width: fit-content;
     display: flex;
-    gap: 0;
+    gap: 2rem;
 }
 
 .contact-text-container {
@@ -19,7 +19,6 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    justify-content: space-between;
 }
 
 .contact-text {
@@ -39,35 +38,48 @@
     font-weight: var(--font-weight-regular);
 }
 
-.contact-image {
+.contact-iframe {
     width: 700px;
     flex: 0 0 auto;
-    text-align: right;
+    height: 300px;
 }
 
-.contact-image img {
+.contact-iframe iframe {
     width: 100%;
-    max-height: 300px;
     height: 100%;
-    object-fit: cover;
     border-radius: 0.25rem;
 }
 
 .map-section {
+    padding-left: clamp(2rem, 8vw, 3rem);
+    padding-right: clamp(2rem, 8vw, 3rem);
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.map-section iframe {
+    width: 1432px;
+    height: 450px;
+    border-radius: 0.25rem;
+}
+
+
+.matterport-section {
     width: fit-content;
     margin: 0 auto 4rem;
     padding-left: clamp(2rem, 8vw, 3rem);
     padding-right: clamp(2rem, 8vw, 3rem);
 }
 
-.map-section iframe {
+.matterport-section iframe {
     width: 1400px;
     height: 450px;
     border-radius: 0.25rem;
 }
 
 .employee-section {
-    padding-top: 6rem;
+    padding-top: 3rem;
     padding-bottom: 6rem;
     padding-left: clamp(2rem, 8vw, 3rem);
     padding-right: clamp(2rem, 8vw, 3rem);
@@ -80,7 +92,7 @@
 }
 
 .employee-header {
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
 }
 
 .employee-header h2 {
@@ -148,21 +160,18 @@
 }
 
 @media (max-width: 1500px) {
-    .contact-container {
-        width: 700px;
-    }
 
     .contact-text-container,
-    .contact-image {
+    .contact-iframe {
         width: 350px;
     }
 
     .map-section {
-        width: 700px;
+        width: 100%;
     }
 
     .map-section iframe {
-        width: 700px;
+        width: 732px;
     }
 
     .employee-card {
@@ -183,6 +192,14 @@
     .employee-info {
         height: auto;
     }
+
+    .matterport-section {
+        width: 700px;
+    }
+
+    .matterport-section iframe {
+        width: 700px;
+    }
 }
 
 @media (max-width: 849px) {
@@ -192,7 +209,7 @@
     }
 
     .contact-text-container,
-    .contact-image {
+    .contact-iframe {
         width: 100%;
     }
 
@@ -219,5 +236,13 @@
         width: 100%;
         min-width: 100%;
         height: auto;
+    }
+
+    .matterport-section {
+        width: 100%;
+    }
+
+    .matterport-section iframe {
+        width: 100%;
     }
 } 
