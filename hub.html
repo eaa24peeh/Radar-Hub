@@ -33,68 +33,201 @@
 <!-- HEADER / NAV -------------------------------------------------------------------------------------------------------------------------------->   
     <header>
         <nav>
+            <button class="burger-menu" aria-label="Open Menu">
+                <img src="assets/burger.svg" alt="Menu" height="17">
+            </button>
             <a href="/" class="logo">
                 <img src="assets/Logo_nav_white.svg" alt="Radar Hub Logo">
             </a>
-            <ul class="nav-menu">
-                <li><a href="hub.html" class="active">vores hub</a></li>
-                <li><a href="support.html">støtte os</a></li>
-                <li><a href="about.html">om os</a></li>
-                <li><a href="contact.html">kontakt</a></li>
-                <li class="profile-icon"><a href="#"><img src="assets/profile_w.svg" alt="Profile"></a></li>
-            </ul>
+            <div class="nav-group">
+                <ul class="nav-menu">
+                    <li><a href="hub.html" class="active">vores hub</a></li>
+                    <li><a href="support.html">støtte os</a></li>
+                    <li><a href="about.html">om os</a></li>
+                    <li><a href="contact.html">kontakt</a></li>
+                </ul>
+                <a href="#" class="profile-icon">
+                    <img src="assets/profile_w.svg" alt="Profile">
+                </a>
+            </div>
         </nav>
     </header>
 
     <main>
+        <section class="hub-intro">
+            <h1>radar fællesskab hub</h1>
+            <p>Uanset om du er ny eller erfaren, byder radar fællesskab hub dig velkommen til at dele og udforske.</p>
+            <div class="search-container">
+                <img src="assets/search.svg" alt="Search" class="search-icon" width="22" height="22">
+                <p>søg vores hub</p>
+            </div>
+        </section>
+
+        <section class="categories-section">
+            <h2>Forumkategorier</h2>
+            <div class="categories-container">
+                <div class="categories-grid">
+                    <div class="category-card">
+                        <h4>Idéer og Udvikling</h4>
+                        <p>83 members following</p>
+                    </div>
+                    <div class="category-card">
+                        <h4>Radar</h4>
+                        <p>122 members following</p>
+                    </div>
+                    <div class="category-card">
+                        <h4>Oplevelser</h4>
+                        <p>84 members following</p>
+                    </div>
+                    <div class="category-card">
+                        <h4>Aarhus Kultur</h4>
+                        <p>86 members following</p>
+                    </div>
+                    <div class="category-card">
+                        <h4>Musik og Kunst</h4>
+                        <p>58 members following</p>
+                    </div>
+                    <div class="category-card">
+                        <h4>Kreativitet</h4>
+                        <p>49 members following</p>
+                    </div>
+                    <div class="category-card">
+                        <h4>Diskusioner</h4>
+                        <p>37 members following</p>
+                    </div>
+                    <div class="category-card">
+                        <h4>Praktisk</h4>
+                        <p>24 members following</p>
+                    </div>
+                    <div class="category-card">
+                        <h4>Feedback</h4>
+                        <p>14 members following</p>
+                    </div>
+                </div>
+                <div class="see-more-wrapper">
+                    <a class="see-more">se alle kategorier</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Live Voting Section -->
+        <section class="live-voting">
+            <h2>Live-afstemning</h2>
+            <p>Din stemme tæller - deltag nu</p>
+            
+            <!-- First Vote Box -->
+            <div class="vote-box">
+                <div class="vote-header">
+                    <h4>Hvad værdsætter du mest ved frivilligt arbejde?</h4>
+                    <div class="vote-status">kommer snart</div>
+                </div>
+            </div>
+
+            <!-- Second Vote Box -->
+            <div class="vote-box">
+                <div class="vote-header">
+                    <h4>Hvilken kunstner skal vi forsøge at få på scenen?</h4>
+                    <div class="vote-status active">2 dage kvar</div>
+                </div>
+                <div class="vote-options">
+                    <div class="vote-option">
+                        <h4>Asbjørn</h4>
+                    </div>
+                    <div class="vote-option">
+                        <h4>Trubaduren</h4>
+                    </div>
+                    <div class="vote-option">
+                        <h4>GUZO</h4>
+                    </div>
+                    <div class="vote-option">
+                        <h4>KARMEN x ABEKEJSER x UK HORNS</h4>
+                        <span class="vote-count">37 antal stemmer</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third Vote Box -->
+            <div class="vote-box">
+                <div class="vote-header">
+                    <h4>Hvilke forbedringer vil du gerne se på Radar?</h4>
+                    <div class="vote-status active">8 dage kvar</div>
+                </div>
+                <div class="vote-options">
+                    <div class="vote-option">
+                        <h4>Mere personlig interaktion med kunstnere</h4>
+                        <span class="vote-count">122 antal stemmer</span>
+                    </div>
+                    <div class="vote-option">
+                        <h4>Flere sociale områder og aktiviteter</h4>
+                        <span class="vote-count">122 antal stemmer</span>
+                    </div>
+                    <div class="vote-option">
+                        <h4>Større variation i musikgenrer</h4>
+                        <span class="vote-count">122 antal stemmer</span>
+                    </div>
+                    <div class="vote-option">
+                        <h4>Familievenlige arrangementer</h4>
+                        <span class="vote-count">122 antal stemmer</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
         <div id="popular-posts-container"></div>
     </main>
 
 <!-- FOOTER -------------------------------------------------------------------------------------------------------------------------------->
     <footer>
-        <div>
-            <h2>Om Radar Hub</h2>
-            <p>Radar Hub er Aarhus dynamiske fællesskab for kreativitet og kultur. Her skabes rum for nye idéer, samarbejder og eksperimenter, der bringer kunst, musik og fællesskab tættere på hinanden. Vi hylder det skæve, det alternative og det nyskabende – både lokalt og internationalt – med særligt fokus på at understøtte nichegenrer og fremtidens kunstnere. Radar Hub er mere end et spillested; det er et kulturelt knudepunkt, hvor publikum, kunstnere og lokalsamfundet mødes for at dele oplevelser og skabe noget unikt sammen.</p>
+        <div class="footer-about-container">
+            <div>
+                <h3>Om Radar Hub</h3>
+                <p>Radar Hub er Aarhus dynamiske fællesskab for kreativitet og kultur. Her skabes rum for nye idéer, samarbejder og eksperimenter, der bringer kunst, musik og fællesskab tættere på hinanden. Vi hylder det skæve, det alternative og det nyskabende – både lokalt og internationalt – med særligt fokus på at understøtte nichegenrer og fremtidens kunstnere. Radar Hub er mere end et spillested; det er et kulturelt knudepunkt, hvor publikum, kunstnere og lokalsamfundet mødes for at dele oplevelser og skabe noget unikt sammen.</p>
+            </div>
         </div>
-        <div>
-            <h2>Kontakt</h2>
-            <p>Telefon +45 8676 0344</p>
-            <p>kontakt(@)radarlive.dk</p>
+        <div class="footer-contact-container">
+            <div class="contact-item">
+                <h3>Kontakt</h3>
+                <p>Telefon +45 8676 0344</p>
+                <p>kontakt(@)radarlive.dk</p>
+            </div>
+            <div class="contact-item">
+                <h3>Adresse</h3>
+                <p>Radar aps</p>
+                <p>Karen Wegeners Gade 6</p>
+                <p>8000 Aarhus C</p>
+            </div>
         </div>
-        <div>
-            <h2>Adresse</h2>
-            <p>Radar aps</p>
-            <p>Karen Wegeners Gade 6</p>
-            <p>8000 Aarhus C</p>
-        </div>
-        <div>
-            <h2>Nyhedsbrev</h2>
-            <p>Tilmeld dig vores nyhedsbrev for at få de seneste opdateringer og nyheder om Radar.</p>
-            <form class="newsletter-form">
-                <div class="newsletter-input-group">
-                    <input 
-                        type="email" 
-                        placeholder="Din email adresse" 
-                        required 
-                        class="newsletter-input"
-                        autocomplete="email"
-                        name="email"
-                    >
-                    <button type="submit" class="newsletter-submit">Tilmeld</button>
-                </div>
-                <div class="newsletter-success hidden">
-                    Tak, du er nu registreret for vores nyhedsbrev!
-                </div>
-            </form>
-        </div>
-        <div>
-            <h2>Følg os</h2>
+        <div class="SoMe-container">
+            <h3>Følg os</h3>
             <p>Seneste nyt fra radar kan findes her</p>
             <div class="social-grid">
                 <a href="#"><img src="assets/facebook.svg" width="12" height="23" alt="Facebook"></a>
                 <a href="#"><img src="assets/instagram.svg" width="23" height="23" alt="Instagram"></a>
                 <a href="#"><img src="assets/spotify.svg" width="26" height="25" alt="Spotify"></a>
                 <a href="#"><img src="assets/yt.svg" width="34" height="23" alt="YouTube"></a>
+            </div>
+        </div>
+        <div class="footer-newsletter-container">
+            <div>
+                <h3>Nyhedsbrev</h3>
+                <p>Tilmeld dig vores nyhedsbrev for at få de seneste opdateringer og nyheder om Radar.</p>
+                <form class="newsletter-form">
+                    <div class="newsletter-input-group">
+                        <input 
+                            type="email" 
+                            placeholder="Din email adresse" 
+                            required 
+                            class="newsletter-input"
+                            autocomplete="email"
+                            name="email"
+                        >
+                        <button type="submit" class="newsletter-submit">Tilmeld</button>
+                    </div>
+                    <div class="newsletter-success hidden">
+                        Tak, du er nu registreret for vores nyhedsbrev!
+                    </div>
+                </form>
             </div>
         </div>
     </footer>
@@ -109,5 +242,6 @@
             });
     </script>
     <script src="js/newsletter.js"></script>
+    <script src="js/nav.js"></script>
 </body>
 </html>

@@ -1,13 +1,21 @@
 :root {
    /* Colors */
     --white: #FFFFFF;
-    --light-gray: #D9D9D9;
+    --light-grey: #D9D9D9;
+    --search-hover: #BBBBBB;
+    --low-visibility: #999999;
+    --low-visibility-v2: #585858;
+    --search-grey: #505050;
     --hover-grey: #505050;
     --medium-dark: #303030;
     --dark: #191919;
+    --very-dark: #121212;
     --accent-default: #BFFF00;
     --accent-dark: #94C600;
     --header-color: hsla(0, 0%, 0%, 0.4);
+
+
+
 
     /* Typography Scale */
   --h1: clamp(1.75rem, calc(1.54rem + 0.95vw), 2.25rem);   /* 28px - 36px */

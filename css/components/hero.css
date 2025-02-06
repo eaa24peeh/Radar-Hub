@@ -45,6 +45,7 @@
 
 .hero-content .cta {
     margin-bottom: 1rem;
+    border-radius: 0.125rem;
 }
 
 .radarhub-large {
@@ -60,7 +61,6 @@
     background-color: var(--accent-default);
     color: var(--dark);
     text-decoration: none;
-    border-radius: 1px;
     font-weight: var(--font-weight-bold);
     font-size: var(--body);
     transition: background-color 0.3s ease;
