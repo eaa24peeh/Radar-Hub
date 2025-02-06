@@ -34,20 +34,18 @@
     <link rel="stylesheet" href="https://use.typekit.net/bli1hsx.css">
     <link rel="stylesheet" href="css/style.css">
     <style>
-        /* Hide content until CSS is loaded */
-        body {
-            visibility: hidden;
+        .content-wrapper {
             opacity: 0;
+            transition: opacity 0.2s;
+        }
+        .content-wrapper.loaded {
+            opacity: 1;
         }
     </style>
-    <script>
-        // Show content once CSS is loaded
-        document.addEventListener('DOMContentLoaded', function() {
-            document.body.style.visibility = 'visible';
-            document.body.style.opacity = '1';
-            document.body.style.transition = 'opacity 0.1s';
-        });
-    </script>
+    <link rel="preload" href="https://use.typekit.net/bli1hsx.css" as="style">
+    <link rel="preload" href="css/style.css" as="style">
+    <script src="js/newsletter.js" defer></script>
+    <script src="js/nav.js" defer></script>
 </head>
 
 <body>
@@ -262,7 +260,5 @@
                 console.error('Error loading popular posts:', error);
             });
     </script>
-    <script src="js/newsletter.js"></script>
-    <script src="js/nav.js"></script>
 </body>
 </html>
