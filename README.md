@@ -19,9 +19,9 @@ Visit the live website: [radarhub.peterhalldahl.dk](https://radarhub.peterhallda
 
 ### The challenge
 
-- Build out the project to the designs provided
+The task is to develop a separate website for Radar—a well-established live music venue in Aarhus—facing a funding crisis starting January 2025. The website must clearly communicate Radar’s cultural value and significance while mobilizing support from young Aarhusians and key local stakeholders. It should serve as an interactive, transparent hub that conveys Radar’s mission, showcases its impact on the local arts scene, and engages the community through features like user contributions, real-time updates, and interactive elements. The objective is to create a dynamic digital platform that not only informs but also inspires and facilitates community involvement to secure Radar’s future as a vital cultural institution in Aarhus.
 
-### the concept
+### The concept
 
 Radar Community Hub is a digital platform designed to connect the Aarhus community with the cultural mission of Radar. With the upcoming challenges in funding, the platform provides a transparent space where users can explore how Radar operates and see the impact of their contributions. It offers interactive features such as live voting, discussion forums, and real-time insights into decision-making processes. The clean and responsive design ensures that whether you are a dedicated supporter or a curious newcomer, you can easily engage, share ideas, and help shape the future of one of Aarhus's most cherished cultural institutions.
 
