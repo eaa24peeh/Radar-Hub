@@ -24,13 +24,6 @@
   --h4: clamp(1rem, calc(0.89rem + 0.48vw), 1.25rem);      /* 16px - 20px */
   --body: clamp(0.875rem, calc(0.82rem + 0.24vw), 1rem);   /* 14px - 16px */
 
-.disabled-link {
-    color: inherit;
-    opacity: 0.5;
-    cursor: not-allowed;
-    padding: 0.5em 0;
-}
-
     /* Font Weights */   
     --font-weight-semi-light: 400;  /* Semi light */
     --font-weight-regular: 500;  /* Regular */
