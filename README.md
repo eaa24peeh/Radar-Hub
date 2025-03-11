@@ -94,7 +94,7 @@ radar-hub/
 - [Removing Text Decoration in CSS](https://www.w3schools.com/css/css_text_decoration.asp)  
   This guide helped me understand how to remove text decoration from my highly styled font to improve readability and accessibility.
 
-- [Real Favicon Generator](https://realfavicongenerator.net/)  
+- [Real Favicon Generator](https://realfavicongenerator.net/](https://realfavicongenerator.net)  
   A useful tool for generating favicon assets.
 
 - [Linearly Scale Font Size with CSS Clamp Based on the Viewport](https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/)  
